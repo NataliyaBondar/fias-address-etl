@@ -37,7 +37,7 @@ Inconsistent address data was used in the system, which led to:
 ---
 
 ### 2.	Solution Architecture | Архитектура решения
-<img width="1270" height="787" alt="ФИАС" src="https://github.com/user-attachments/assets/8a64da32-a412-4d91-8bf6-94bf7b0b12ee" />
+<img width="1440" height="694" alt="ФИАС (1)" src="https://github.com/user-attachments/assets/be4f5005-f3a8-436d-bf1f-9d93670b22a8" />
 
 ---
 
@@ -125,13 +125,17 @@ Inconsistent address data was used in the system, which led to:
 
 **5. User Module**
 
-- Delphi application  
-- stored procedures in MS SQL
+- [Delphi application](https://github.com/NataliyaBondar/fias-address-etl/tree/main/user_address_module/delphi)  
+- [stored procedures in MS SQL](https://github.com/NataliyaBondar/fias-address-etl/blob/main/user_address_module/mssql/XMLProcessing400.sql)
   
 **5. Пользовательский модуль**
 
-- приложение на Delphi
-- хранимые процедуры в MS SQL
+- [приложение на Delphi](https://github.com/NataliyaBondar/fias-address-etl/tree/main/user_address_module/delphi)
+- [хранимые процедуры в MS SQL](https://github.com/NataliyaBondar/fias-address-etl/blob/main/user_address_module/mssql/XMLProcessing400.sql)
+
+<img width="727" height="502" alt="image" src="https://github.com/user-attachments/assets/ab573d7f-cea8-4b46-874a-8f905cb0583c" />
+
+<img width="523" height="255" alt="image" src="https://github.com/user-attachments/assets/d1bfbc86-99ed-4937-b7f2-d08675b399e0" />
 
 ---
 
