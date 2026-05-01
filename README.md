@@ -59,7 +59,7 @@ Inconsistent address data was used in the system, which led to:
 
 ---
 
-**2. Data Storage in MongoDB**
+**2. Data Storage in MongoDB** [schema mongodb-json](https://github.com/NataliyaBondar/fias-address-etl/blob/main/schema_mongodb_json/schema.json)
 
 **The database is designed based on the following principles:**
 
@@ -79,7 +79,7 @@ Inconsistent address data was used in the system, which led to:
 6. Change history (change_history)
 7. ETL / data loading (journal_load_extract_file, journal_files)
 
-**2. Хранилище данных в MongoDB**
+**2. Хранилище данных в MongoDB** [schema mongodb-json](https://github.com/NataliyaBondar/fias-address-etl/blob/main/schema_mongodb_json/schema.json)
 
 **База данных построена по принципу:**
 
