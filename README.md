@@ -101,17 +101,25 @@ Inconsistent address data was used in the system, which led to:
 
 ---
 
-**3. ELT между MongoDB и MS SQL**
+**3. ELT between MongoDB and MS SQL** [python **address_mongo_sql_sync**](https://github.com/NataliyaBondar/fias-address-etl/tree/main/address_mongo_sql-sync)  
+- change data extraction  
+- delta-only loading
+
+**3. ELT между MongoDB и MS SQL** [python **address_mongo_sql_sync**](https://github.com/NataliyaBondar/fias-address-etl/tree/main/address_mongo_sql-sync)
 - выборка изменений
 - загрузка только дельты
 
-код на Python
-
 ---
+
+**4. Address Synchronization in MS SQL**
+
+- [synchronization of streets, localities, and planning structure](https://github.com/NataliyaBondar/fias-address-etl/blob/main/mssql_sync/update_street_child.sql)  
+- [house synchronization](https://github.com/NataliyaBondar/fias-address-etl/blob/main/mssql_sync/update_house.sql)  
 
 **4. Синхронизация адресов в MS SQL**
 
-код на TSQL
+- [синхронизация улиц, населенных пунктов, планировочной структуры](https://github.com/NataliyaBondar/fias-address-etl/blob/main/mssql_sync/update_street_child.sql)
+- [синхронизация домов](https://github.com/NataliyaBondar/fias-address-etl/blob/main/mssql_sync/update_house.sql)
 
 ---
 
