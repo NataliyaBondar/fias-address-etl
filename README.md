@@ -57,8 +57,49 @@ Inconsistent address data was used in the system, which led to:
 - парсинг XML
 - нормализация структуры
 
+---
+
+**2. Data Storage in MongoDB**
+
+**The database is designed based on the following principles:**
+
+1. Normalized data model
+2. Separation into:
+- reference data (types)
+- entities (addresses, houses, apartments)
+- parameters (params)
+- hierarchies (hierarchy)
+
+**Main Collections:**
+1. Address objects (addr_obj, addr_obj_division, addr_obj_param)
+2. Houses and real estate objects (houses, apartments, rooms, carplaces, steads)
+3. Object parameters (houses_params, apartments_params, rooms_params, carplaces_params, steads_params)
+4. Reference data (addr_obj_types, house_types, apartment_types, room_types, param_types)
+5. Hierarchies (adm_hierarchy, mun_hierarchy)
+6. Change history (change_history)
+7. ETL / data loading (journal_load_extract_file, journal_files)
+
 **2. Хранилище данных в MongoDB**
-- схема
+
+**База данных построена по принципу:**
+
+1. Нормализованная модель
+2. Разделение на:
+- справочники (types)
+- сущности (addresses, houses, apartments)
+- параметры (params)
+- иерархии (hierarchy)
+
+**Основные коллекции:**
+1. Адресные объекты (addr_obj, addr_obj_division, addr_obj_param)
+2. Дома и объекты недвижимости (houses, apartments, rooms, carplaces, steads)
+3. Параметры объектов (houses_params, apartments_params, rooms_params, carplaces_params, steads_params)
+4. Справочники (addr_obj_types, house_types, apartment_types, room_types, param_types)
+5. Иерархии (adm_hierarchy, mun_hierarchy)
+6. История изменений (change_history)
+7. ETL / загрузка данных (journal_load_extract_file, journal_files)
+
+---
 
 **3. ELT между MongoDB и MS SQL**
 - выборка изменений
@@ -66,14 +107,20 @@ Inconsistent address data was used in the system, which led to:
 
 код на Python
 
+---
+
 **4. Синхронизация адресов в MS SQL**
 
 код на TSQL
+
+---
 
 **5. Пользовательский модуль**
 
 - приложение на Delphi
 - хранимые процедуры в MS SQL
+
+---
 
 ### НАВЫКИ
 
