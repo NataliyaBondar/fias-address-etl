@@ -123,6 +123,11 @@ Inconsistent address data was used in the system, which led to:
 
 ---
 
+**5. User Module**
+
+- Delphi application  
+- stored procedures in MS SQL
+  
 **5. Пользовательский модуль**
 
 - приложение на Delphi
@@ -130,10 +135,9 @@ Inconsistent address data was used in the system, which led to:
 
 ---
 
-### НАВЫКИ
+### SKILLS | НАВЫКИ
 
 ✔ ETL
-✔ работа с API
 ✔ MS SQL | MongoDB
 ✔ Python | Delphi
 
