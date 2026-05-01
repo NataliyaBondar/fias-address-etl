@@ -1,0 +1,240 @@
+{
+  "database": "address",
+  "collections": {
+    
+    "addr_obj": {
+      "description": "Address objects (cities, streets, regions)",
+      "fields": {
+        "_id": "ObjectId",
+        "id": "int",
+        "objectid": "int",
+        "objectguid": "string",
+        "name": "string",
+        "typename": "string",
+        "level": "int",
+        "opertypeid": "string",
+        "previd": "int",
+        "nextid": "int",
+        "startdate": "date",
+        "enddate": "date",
+        "updatedate": "date",
+        "isactive": "int",
+        "isactual": "int",
+        "version_file": "int"
+      }
+    },
+
+    "addr_obj_division": {
+      "description": "Address hierarchy links",
+      "fields": {
+        "_id": "ObjectId",
+        "id": "int",
+        "parentid": "int",
+        "childid": "int",
+        "changeid": "int",
+        "version_file": "int"
+      }
+    },
+
+    "addr_obj_param": {
+      "description": "Address parameters",
+      "fields": {
+        "_id": "ObjectId",
+        "id": "int",
+        "objectid": "int",
+        "typeid": "int",
+        "value": "string",
+        "changeid": "int",
+        "updatedate": "date",
+        "version_file": "int"
+      }
+    },
+
+    "adm_hierarchy": {
+      "description": "Administrative hierarchy",
+      "fields": {
+        "_id": "ObjectId",
+        "objectid": "int",
+        "parentobjid": "int",
+        "regioncode": "string",
+        "areacode": "string",
+        "citycode": "string",
+        "placecode": "string",
+        "streetcode": "string",
+        "startdate": "date",
+        "enddate": "date",
+        "isactive": "int",
+        "version_file": "int"
+      }
+    },
+
+    "mun_hierarchy": {
+      "description": "Municipal hierarchy",
+      "fields": {
+        "_id": "ObjectId",
+        "objectid": "int",
+        "parentobjid": "int",
+        "oktmo": "int",
+        "startdate": "date",
+        "enddate": "date",
+        "isactive": "int",
+        "version_file": "int"
+      }
+    },
+
+    "houses": {
+      "description": "Houses",
+      "fields": {
+        "_id": "ObjectId",
+        "objectid": "int",
+        "objectguid": "string",
+        "housenum": "string",
+        "housetype": "int",
+        "opertypeid": "string",
+        "startdate": "date",
+        "enddate": "date",
+        "updatedate": "date",
+        "isactive": "int",
+        "isactual": "int",
+        "version_file": "int"
+      }
+    },
+
+    "apartments": {
+      "description": "Apartments",
+      "fields": {
+        "_id": "ObjectId",
+        "objectid": "int",
+        "objectguid": "string",
+        "number": "string",
+        "aparttype": "string",
+        "opertypeid": "string",
+        "startdate": "date",
+        "enddate": "date",
+        "isactive": "int",
+        "isactual": "int",
+        "version_file": "int"
+      }
+    },
+
+    "rooms": {
+      "description": "Rooms",
+      "fields": {
+        "_id": "ObjectId",
+        "objectid": "int",
+        "objectguid": "string",
+        "number": "int",
+        "roomtype": "int",
+        "startdate": "date",
+        "enddate": "date",
+        "isactive": "int",
+        "isactual": "int",
+        "version_file": "int"
+      }
+    },
+
+    "carplaces": {
+      "description": "Car parking places",
+      "fields": {
+        "_id": "ObjectId",
+        "objectid": "int",
+        "objectguid": "string",
+        "number": "string",
+        "startdate": "date",
+        "enddate": "date",
+        "isactive": "int",
+        "isactual": "int",
+        "version_file": "int"
+      }
+    },
+
+    "steads": {
+      "description": "Land plots",
+      "fields": {
+        "_id": "ObjectId",
+        "objectid": "int",
+        "objectguid": "string",
+        "number": "string",
+        "startdate": "date",
+        "enddate": "date",
+        "isactive": "int",
+        "isactual": "int",
+        "version_file": "int"
+      }
+    },
+
+    "params": {
+      "description": "Universal parameters (for houses, apartments, rooms, etc.)",
+      "pattern": "*_params",
+      "fields": {
+        "_id": "ObjectId",
+        "objectid": "int",
+        "typeid": "int",
+        "value": "string",
+        "startdate": "date",
+        "enddate": "date",
+        "updatedate": "date",
+        "version_file": "int"
+      }
+    },
+
+    "types": {
+      "description": "Reference dictionaries",
+      "pattern": "*_types",
+      "fields": {
+        "_id": "ObjectId",
+        "id": "int",
+        "name": "string",
+        "shortname": "string",
+        "desc": "string",
+        "isactive": "string",
+        "startdate": "date",
+        "enddate": "date",
+        "version_file": "int"
+      }
+    },
+
+    "change_history": {
+      "description": "Changes history",
+      "fields": {
+        "_id": "ObjectId",
+        "changeid": "int",
+        "objectid": "int",
+        "opertypeid": "string",
+        "changedate": "date",
+        "version_file": "int"
+      }
+    },
+
+    "normative_docs": {
+      "description": "Legal documents",
+      "fields": {
+        "_id": "ObjectId",
+        "id": "int",
+        "name": "string",
+        "number": "string",
+        "date": "date",
+        "type": "int",
+        "kind": "int",
+        "orgname": "string",
+        "comment": "string",
+        "version_file": "int"
+      }
+    },
+
+    "journal_load_extract_file": {
+      "description": "ETL loading log",
+      "fields": {
+        "_id": "ObjectId",
+        "version_id": "int",
+        "link_file": "string",
+        "download": "boolean",
+        "extract": "boolean",
+        "load_to_mongo": "boolean",
+        "start_at": "date",
+        "end_at": "date",
+        "files": "array"
+      }
+    }
+  }
+}
