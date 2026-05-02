@@ -1,24 +1,29 @@
+![Python](https://img.shields.io/badge/Python-ETL-blue)
+![MongoDB](https://img.shields.io/badge/MongoDB-Raw-green)
+![MS SQL](https://img.shields.io/badge/MS_SQL-DWH-red)
+![Status](https://img.shields.io/badge/status-active-success)
+
 ## PROJECT: Address Integration and Normalization System
 ## ПРОЕКТ: Система интеграции и нормализации адресов
 
-### Project Description
+### 📌 Project Description
 
 An address data synchronization and normalization system was developed.  
 The solution includes an ETL pipeline for regular updates of the address database and a user interface for address matching.
 
-### Описание проекта
+### 📌 Описание проекта
 
 Разработана система синхронизации и нормализации адресных данных.  
 Решение включает ETL-пайплайн для регулярного обновления адресной базы и пользовательский интерфейс для сопоставления адресов.
 
-### 1. Business Problem
+### 🎯 1. Business Problem
 
 Inconsistent address data was used in the system, which led to:
 - data duplication  
 - reporting errors  
 - inability to perform accurate analytics
 
-### 1.	Бизнес-задача
+### 🎯 1.	Бизнес-задача
 В системе использовались несогласованные адреса, что приводило к:
 -	дублированию данных 
 -	ошибкам в отчётности 
@@ -36,12 +41,12 @@ Inconsistent address data was used in the system, which led to:
 
 ---
 
-### 2.	Solution Architecture | Архитектура решения
+### 🏗 2.	Solution Architecture | Архитектура решения
 <img width="1440" height="694" alt="ФИАС (1)" src="https://github.com/user-attachments/assets/be4f5005-f3a8-436d-bf1f-9d93670b22a8" />
 
 ---
 
-### 3.	Technical Implementation | Техническая реализация
+### ⚙️ 3.	Technical Implementation | Техническая реализация
 
 **1. Data Ingestion and Processing** [python: **address_get**](https://github.com/NataliyaBondar/fias-address-etl/tree/main/address_get)
 
@@ -139,7 +144,7 @@ Inconsistent address data was used in the system, which led to:
 
 ---
 
-### SKILLS | НАВЫКИ
+### 🧠 SKILLS | НАВЫКИ
 
 ✔ ETL
 ✔ MS SQL | MongoDB
